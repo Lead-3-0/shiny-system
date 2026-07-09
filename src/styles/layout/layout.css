@@ -1,0 +1,58 @@
+/* Main Layout Styles */
+
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  background: var(--color-surface-dark);
+}
+
+.layout-wrapper {
+  flex: 1;
+  margin-left: var(--sidebar-width);
+  display: flex;
+  flex-direction: column;
+  transition: margin-left var(--transition-base);
+}
+
+.layout-main {
+  flex: 1;
+  margin-top: var(--topbar-height);
+  padding: var(--spacing-2xl);
+  overflow-y: auto;
+  background: var(--color-surface-dark);
+  min-height: calc(100vh - var(--topbar-height));
+}
+
+.layout-main > * + * {
+  margin-top: var(--spacing-2xl);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .layout-wrapper {
+    margin-left: 0;
+  }
+
+  .layout-main {
+    padding: var(--spacing-lg);
+    margin-top: calc(var(--topbar-height) + var(--spacing-lg));
+  }
+}
+
+/* Scrollbar Styling */
+.layout-main::-webkit-scrollbar {
+  width: 8px;
+}
+
+.layout-main::-webkit-scrollbar-track {
+  background: var(--color-surface-dark);
+}
+
+.layout-main::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+.layout-main::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.4);
+}

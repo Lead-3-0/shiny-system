@@ -84,4 +84,37 @@
 
   /* Borders */
   --border-color: rgba(100, 116, 139, 0.2);
+  
+  /* Component Tokens */
+  --bg-button-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  --bg-button-secondary: var(--color-surface-medium);
+  --bg-button-danger: linear-gradient(135deg, var(--color-danger) 0%, var(--color-danger-dark) 100%);
+  
+  --bg-input: var(--color-surface-medium);
+  --border-input: rgba(100, 116, 139, 0.3);
+  --focus-ring: 0 0 0 3px rgba(14, 165, 233, 0.1), 0 0 0 2px var(--color-primary);
+  
+  --bg-card: var(--color-surface-medium);
+  --bg-card-hover: var(--color-surface-light);
+  --bg-card-elevated: linear-gradient(135deg, rgba(14, 165, 233, 0.05) 0%, rgba(139, 92, 246, 0.05) 100%);
+  
+  --bg-modal: var(--color-surface-medium);
+  --bg-modal-backdrop: rgba(0, 0, 0, 0.7);
+  
+  --bg-sidebar: var(--color-surface-medium);
+  --bg-topbar: var(--color-surface-dark);
+  
+  --text-error: var(--color-danger);
+  --text-success: var(--color-success);
+  --text-warning: var(--color-warning);
+  --text-info: var(--color-info);
+  
+  --bg-skeleton: linear-gradient(90deg, var(--color-surface-light) 0%, var(--color-surface-dark) 50%, var(--color-surface-light) 100%);
+  --animation-skeleton: skeleton 2s infinite;
+  
+  /* Grid & Layout */
+  --sidebar-width: 16rem;
+  --sidebar-width-collapsed: 5rem;
+  --topbar-height: 4rem;
+  --main-max-width: 1920px;
 }
