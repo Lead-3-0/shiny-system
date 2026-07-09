@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/components/toggle.css'
+import '../../styles/components/toggle.css'
 
 const Toggle = ({ checked, onChange, label, disabled = false }) => {
   return (

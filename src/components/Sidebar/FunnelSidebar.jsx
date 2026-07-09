@@ -2,7 +2,7 @@ import React from 'react'
 import { Menu, X } from 'lucide-react'
 import NodeRegistry from '../../nodes/registry'
 import useUIStore from '../../store/uiStore'
-import '../styles/sidebar.css'
+import '../../styles/sidebar.css'
 
 const FunnelSidebar = () => {
   const { sidebarOpen, toggleSidebar } = useUIStore()

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../styles/components/tabs.css'
+import '../../styles/components/tabs.css'
 
 const Tabs = ({ tabs, defaultTab = 0, onTabChange }) => {
   const [activeTab, setActiveTab] = useState(defaultTab)

@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { ChevronDown } from 'lucide-react'
-import '../styles/components/dropdown.css'
+import '../../styles/components/dropdown.css'
 
 const Dropdown = ({ label, options, onSelect, value, disabled = false }) => {
   const [isOpen, setIsOpen] = useState(false)

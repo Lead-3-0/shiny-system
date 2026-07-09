@@ -1,0 +1,36 @@
+/* Canvas/FunnelBuilder Styles */
+.reactflow-wrapper {
+  background-color: var(--color-surface-dark);
+  color: var(--color-text-primary);
+}
+
+.reactflow__background {
+  background-color: var(--color-surface-dark);
+}
+
+.reactflow__edge {
+  stroke: var(--color-text-tertiary);
+}
+
+.reactflow__controls {
+  background-color: var(--color-surface-medium);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+}
+
+.reactflow__controls button {
+  background-color: var(--color-surface-medium);
+  border: 1px solid var(--border-color);
+  color: var(--color-text-primary);
+}
+
+.reactflow__controls button:hover {
+  background-color: rgba(14, 165, 233, 0.1);
+  border-color: var(--color-primary);
+}
+
+.reactflow__minimap {
+  background-color: var(--color-surface-medium);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+}

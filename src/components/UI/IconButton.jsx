@@ -1,6 +1,6 @@
 import React from 'react'
 import classNames from 'classnames'
-import '../styles/components/icon-button.css'
+import '../../styles/components/icon-button.css'
 
 const IconButton = ({
   icon: Icon,

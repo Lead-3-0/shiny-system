@@ -1,6 +1,6 @@
 import React from 'react'
 import { Loader } from 'lucide-react'
-import '../styles/components/loading.css'
+import '../../styles/components/loading.css'
 
 const Loading = ({ fullScreen = false, message = 'Loading...' }) => {
   const Component = (

@@ -1,7 +1,7 @@
 import React from 'react'
 import { BarChart3, TrendingUp, Users, DollarSign } from 'lucide-react'
 import Card from '../UI/Card'
-import '../styles/analytics.css'
+import '../../styles/analytics.css'
 
 const FunnelMetrics = () => {
   const metrics = [

@@ -1,6 +1,6 @@
 import React from 'react'
 import classNames from 'classnames'
-import '../styles/components/button.css'
+import '../../styles/components/button.css'
 
 const Button = ({
   children,

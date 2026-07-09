@@ -4,7 +4,7 @@ import Input from '../UI/Input'
 import Button from '../UI/Button'
 import Toggle from '../UI/Toggle'
 import useFunnelStore from '../../store/funnelStore'
-import '../styles/funnel-settings.css'
+import '../../styles/funnel-settings.css'
 
 const FunnelSettings = ({ onClose }) => {
   const { funnelMetadata, setFunnelMetadata } = useFunnelStore()

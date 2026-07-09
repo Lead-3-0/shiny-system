@@ -3,7 +3,7 @@ import { Save, Download, Settings } from 'lucide-react'
 import Button from '../UI/Button'
 import IconButton from '../UI/IconButton'
 import useFunnelStore from '../../store/funnelStore'
-import '../styles/topbar.css'
+import '../../styles/topbar.css'
 
 const TopBar = ({ onSettingsClick }) => {
   const { funnelMetadata } = useFunnelStore()

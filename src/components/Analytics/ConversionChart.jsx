@@ -10,7 +10,7 @@ import {
   ResponsiveContainer,
 } from 'recharts'
 import Card from '../UI/Card'
-import '../styles/analytics.css'
+import '../../styles/analytics.css'
 
 const ConversionChart = () => {
   const data = [
@@ -26,29 +26,42 @@ const ConversionChart = () => {
   return (
     <Card title="Conversion Funnel" className="chart-card">
       <ResponsiveContainer width="100%" height={300}>
-        <LineChart data={data}>
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis />
-          <Tooltip />
-          <Legend />
+        <LineChart data={data} margin={{ top: 5, right: 30, left: 0, bottom: 5 }}>
+          <CartesianGrid strokeDasharray="3 3" stroke="rgba(100, 116, 139, 0.2)" />
+          <XAxis dataKey="name" stroke="var(--color-text-tertiary)" />
+          <YAxis stroke="var(--color-text-tertiary)" />
+          <Tooltip
+            contentStyle={{
+              backgroundColor: 'var(--color-surface-medium)',
+              border: '1px solid var(--border-color)',
+              borderRadius: 'var(--border-radius-md)',
+              color: 'var(--color-text-primary)',
+            }}
+          />
+          <Legend wrapperStyle={{ color: 'var(--color-text-secondary)' }} />
           <Line
             type="monotone"
             dataKey="visitors"
-            stroke="#3B82F6"
-            dot={{ r: 4 }}
+            stroke="#0ea5e9"
+            strokeWidth={2}
+            dot={false}
+            activeDot={{ r: 6 }}
           />
           <Line
             type="monotone"
             dataKey="leads"
-            stroke="#8B5CF6"
-            dot={{ r: 4 }}
+            stroke="#8b5cf6"
+            strokeWidth={2}
+            dot={false}
+            activeDot={{ r: 6 }}
           />
           <Line
             type="monotone"
             dataKey="conversions"
-            stroke="#10B981"
-            dot={{ r: 4 }}
+            stroke="#10b981"
+            strokeWidth={2}
+            dot={false}
+            activeDot={{ r: 6 }}
           />
         </LineChart>
       </ResponsiveContainer>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { X } from 'lucide-react'
-import '../styles/components/modal.css'
+import '../../styles/components/modal.css'
 
 const Modal = ({ isOpen, title, children, onClose, actions = [] }) => {
   if (!isOpen) return null
